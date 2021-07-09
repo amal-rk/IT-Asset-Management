@@ -48,6 +48,41 @@
 		</div>
 		<br>
 		<div class="container">
+			<h2>Software</h2><br>
+			<table class="table table-striped table-hover table-bordered">
+				<thead>
+					<tr>
+						<th>ID</th>
+						<th>Name</th>
+						<th>Version</th>
+						<th>System ID</th>
+						<th>Installed on</th>
+						<th>Type</th>
+						<th>Description</th>
+						<th>Price</th>
+					</tr>
+				</thead>
+				<tbody>
+					<?php
+						foreach($software as $row)
+						{
+						echo "<tr>";
+						echo "<td>".$row->id."</td>";
+						echo "<td>".$row->name."</td>";
+						echo "<td>".$row->version."</td>";
+						echo "<td>".$row->systemid."</td>";
+						echo "<td>".$row->installdate."</td>";
+						echo "<td>".$row->type."</td>";
+						echo "<td>".$row->description."</td>";
+						echo "<td>".$row->price."</td>";
+						echo "</tr>";
+						}
+					?>
+				</tbody>		
+			</table>
+		</div>
+		<br>
+		<div class="container">
 			<h2>Keyboards</h2><br>
 			<table class="table table-striped table-hover table-bordered">
 				<thead>
@@ -55,7 +90,7 @@
 						<th>ID</th>
 						<th>Manufacturer</th>
 						<th>Model</th>
-						<th>Category</th>
+						<th>Type</th>
 						<th>Location</th>
 						<th>Description</th>
 						<th>GST</th>
@@ -71,7 +106,7 @@
 						echo "<td>".$row->id."</td>";
 						echo "<td>".$row->manufacture."</td>";
 						echo "<td>".$row->model."</td>";
-						echo "<td>".$row->categories."</td>";
+						echo "<td>".$row->type."</td>";
 						echo "<td>".$row->location."</td>";
 						echo "<td>".$row->description."</td>";
 						echo "<td>".$row->gst."</td>";
@@ -92,7 +127,7 @@
 						<th>ID</th>
 						<th>Manufacturer</th>
 						<th>Model</th>
-						<th>Category</th>
+						<th>Type</th>
 						<th>Location</th>
 						<th>Description</th>
 						<th>GST</th>
@@ -108,7 +143,7 @@
 						echo "<td>".$row->id."</td>";
 						echo "<td>".$row->manufacture."</td>";
 						echo "<td>".$row->model."</td>";
-						echo "<td>".$row->categories."</td>";
+						echo "<td>".$row->type."</td>";
 						echo "<td>".$row->location."</td>";
 						echo "<td>".$row->description."</td>";
 						echo "<td>".$row->gst."</td>";
@@ -120,6 +155,7 @@
 				</tbody>		
 			</table>
 		</div>
+		<br>
 		<div class="container">
 			<h2>Printers</h2><br>
 			<table class="table table-striped table-hover table-bordered">
@@ -128,7 +164,7 @@
 						<th>ID</th>
 						<th>Manufacturer</th>
 						<th>Model</th>
-						<th>Category</th>
+						<th>Type</th>
 						<th>Location</th>
 						<th>Description</th>
 						<th>GST</th>
@@ -144,46 +180,12 @@
 						echo "<td>".$row->id."</td>";
 						echo "<td>".$row->manufacture."</td>";
 						echo "<td>".$row->model."</td>";
-						echo "<td>".$row->categories."</td>";
+						echo "<td>".$row->type."</td>";
 						echo "<td>".$row->location."</td>";
 						echo "<td>".$row->description."</td>";
 						echo "<td>".$row->gst."</td>";
 						echo "<td>".$row->price."</td>";
 						echo "<td>".$row->warranty."</td>";
-						echo "</tr>";
-						}
-					?>
-				</tbody>		
-			</table>
-		</div>
-		<div class="container">
-			<h2></h2><br>
-			<table class="table table-striped table-hover table-bordered">
-				<thead>
-					<tr>
-						<th>ID</th>
-						<th>Name</th>
-						<th>Version</th>
-						<th>System No</th>
-						<th>Installed on</th>
-						<th>Type</th>
-						<th>Description</th>
-						<th>Price</th>
-					</tr>
-				</thead>
-				<tbody>
-					<?php
-						foreach($software as $row)
-						{
-						echo "<tr>";
-						echo "<td>".$row->id."</td>";
-						echo "<td>".$row->name."</td>";
-						echo "<td>".$row->version."</td>";
-						echo "<td>".$row->systemid."</td>";
-						echo "<td>".$row->installdate."</td>";
-						echo "<td>".$row->type."</td>";
-						echo "<td>".$row->description."</td>";
-						echo "<td>".$row->price."</td>";
 						echo "</tr>";
 						}
 					?>

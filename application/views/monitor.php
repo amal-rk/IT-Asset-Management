@@ -18,8 +18,8 @@
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="categories" class="col-sm-2 control-label">Categories</label>
-							<div class="col-sm-8"><select  id="selector1" class="form-control1" name="categories">
+							<label for="type" class="col-sm-2 control-label">Type</label>
+							<div class="col-sm-8"><select  id="selector1" class="form-control1" name="type">
 									<option>LCD</option>
 									<option>LED</option>
 									<option>NORMAL</option>
@@ -41,7 +41,7 @@
 								<textarea  id="txtarea1" cols="50" rows="4" class="form-control1" name="description"></textarea>
 							</div>
 						</div>
-					</div>
+					</div><br>
 					<div class="row">
 					<h3 class="title1">PAYMENT DETAILS :</h3>
 					<div class="form-three widget-shadow">

@@ -3,7 +3,7 @@
 		<div id="page-wrapper">
       <div class="row">
       	<form class="form-horizontal" action="<?php echo site_url();?>/AdminController/add_software/" method="post">
-					<h3 class="title1">ADD MONITORS :</h3>
+					<h3 class="title1">ADD SOFTWARE :</h3>
 					<div class="form-three widget-shadow">
 						<div class="form-group">
 							<label for="name" class="col-sm-2 control-label">Name</label>
@@ -47,6 +47,7 @@
 							</div>
 						</div>
 					</div>
+					<br>
 					<div class="row">
 					<h3 class="title1">PAYMENT DETAILS :</h3>
 					<div class="form-three widget-shadow">

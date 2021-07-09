@@ -57,6 +57,7 @@
 							</div>
 						</div>
 					</div>
+					<br>
 					<div class="row">
 					<h3 class="title1">PAYMENT DETAILS :</h3>
 					<div class="form-three widget-shadow">

@@ -18,9 +18,9 @@
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="categories" class="col-sm-2 control-label">Categories</label>
+							<label for="type" class="col-sm-2 control-label">Type</label>
 							<div class="col-sm-8">
-								<select  id="selector1" class="form-control1" name="categories">
+								<select  id="selector1" class="form-control1" name="type">
 									<option>Wired</option>
 									<option>Wireless</option>
 								</select>
@@ -41,6 +41,7 @@
 							</div>
 						</div>
 					</div>
+					<br>
 					<div class="row">
 					<h3 class="title1">PAYMENT DETAILS :</h3>
 					<div class="form-three widget-shadow">
@@ -57,9 +58,9 @@
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="warranty-valid-till" class="col-sm-2 control-label">Warranty valid till (Year):</label>
+							<label for="warranty" class="col-sm-2 control-label">Warranty valid till (Year):</label>
 							<div class="col-sm-8">
-								<input type="text" class="form-control1" name="warranty-valid-till">
+								<input type="text" class="form-control1" name="warranty">
 							</div>
 						</div>
 							<input type="submit" class="btn btn-primary btn-lg" id="submit" value="ADD" name="save"> 

@@ -117,7 +117,7 @@ class AdminController extends CI_Controller
         if($this->input->post('save'))
         {
             $data['devicename']=$this->input->post('devicename');
-            $data['version']=$this->input->post('version');
+            $data['manufacture']=$this->input->post('manufacture');
             $data['model']=$this->input->post('model');
             $data['processor']=$this->input->post('processor');
             $data['ram']=$this->input->post('ram');
@@ -147,7 +147,7 @@ class AdminController extends CI_Controller
         {
             $data['manufacture']=$this->input->post('manufacture');
             $data['model']=$this->input->post('model');
-            $data['categories']=$this->input->post('categories');
+            $data['type']=$this->input->post('type');
             $data['location']=$this->input->post('location');
             $data['description']=$this->input->post('description');
             $data['gst']=$this->input->post('gst');
@@ -171,10 +171,9 @@ class AdminController extends CI_Controller
     {
         if($this->input->post('save'))
         {
-            $data['version']=$this->input->post('version');
+            $data['manufacture']=$this->input->post('manufacture');
             $data['model']=$this->input->post('model');
-            $data['modelnumber']=$this->input->post('modelnumber');
-            $data['categories']=$this->input->post('categories');
+            $data['type']=$this->input->post('type');
             $data['location']=$this->input->post('location');
             $data['description']=$this->input->post('description');
             $data['gst']=$this->input->post('gst');
@@ -198,9 +197,9 @@ class AdminController extends CI_Controller
     {
         if($this->input->post('save'))
         {
-            $data['version']=$this->input->post('version');
+            $data['manufacture']=$this->input->post('manufacture');
             $data['model']=$this->input->post('model');
-            $data['categories']=$this->input->post('categories');
+            $data['type']=$this->input->post('type');
             $data['location']=$this->input->post('location');
             $data['description']=$this->input->post('description');
             $data['gst']=$this->input->post('gst');
@@ -224,9 +223,9 @@ class AdminController extends CI_Controller
     {
         if($this->input->post('save'))
         {
-            $data['version']=$this->input->post('version');
+            $data['manufacture']=$this->input->post('manufacture');
             $data['model']=$this->input->post('model');
-            $data['categories']=$this->input->post('categories');
+            $data['type']=$this->input->post('type');
             $data['location']=$this->input->post('location');
             $data['description']=$this->input->post('description');
             $data['gst']=$this->input->post('gst');
