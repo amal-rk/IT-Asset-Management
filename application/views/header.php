@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Glance Design Dashboard an Admin Panel Category Flat Bootstrap Responsive Website Template | Home :: w3layouts</title>
+<title>Asset Manager</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Glance Design Dashboard Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
@@ -134,7 +134,7 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
         <li class="treeview">
                 <a href="#">
                 <i class="fa fa-laptop"></i>
-                <span>ADD PRODUCT</span>
+                <span>ADD ITEM</span>
                 <i class="fa fa-angle-left pull-right"></i>
                 </a>
                 <ul class="treeview-menu">
@@ -152,26 +152,14 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
           <li><a href="<?php echo site_url();?>/AdminController/printer"><i class="fa fa-angle-right"></i>PRINTER</a></li>
           <li><a href="<?php echo site_url();?>/AdminController/keyboard"><i class="fa fa-angle-right"></i>KEYBOARD</a></li>
         </ul>
+        <li class="treeview">
+          <a href="<?php echo site_url();?>/AdminController/viewitems">
+          <i class="fa fa-dashboard"></i> <span>View Items</span>
+          </a>
       </li>
           <li class="treeview">
             <a href="#">
             <i class="fa fa-angle-left pull-right"></i>
-           <span> OPERATING SYSTEM</span>
-        </a></li>
-          <ul class="treeview-menu">
-                  <li><a href="#"><i class="fa fa-angle-right"></i>WINDOWS</a></li>
-          <li><a href="#"><i class="fa fa-angle-right"></i>LINUX</a></li>
-          </ul>
-                </ul>
-              </li>
-              <li class="treeview">
-                <a href="charts.html">
-                <i class="fa fa-pie-chart"></i>
-                <span>Charts</span>
-                <span class="label label-primary pull-right">new</span>
-                </a>
-              </li>
-              <li class="treeview">
               <li class="treeview">
                 <a href="<?php echo site_url();?>/AdminController/userinformation">
                 <i class="fa fa-laptop"></i>
