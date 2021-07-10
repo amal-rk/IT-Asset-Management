@@ -282,4 +282,5 @@ class AdminController extends CI_Controller
         $this->load->view('viewitems',$result);
     }
 }
+
 ?>
