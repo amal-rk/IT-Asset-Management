@@ -164,7 +164,7 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
                 <a href="<?php echo site_url();?>/AdminController/userinformation">
                 <i class="fa fa-laptop"></i>
                 <span>User information</span>
-              <li class="treeview">
+              <!-- <li class="treeview">
                 <a href="#">
                 <i class="fa fa-envelope"></i> <span>Update</span>
                 <i class="fa fa-angle-left pull-right"></i><small class="label pull-right label-info1">08</small><span class="label label-primary1 pull-right">02</span></a>
@@ -172,7 +172,7 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
                   <li><a href="inbox.html"><i class="fa fa-angle-right"></i>Hardware</a></li>
                   <li><a href="compose.html"><i class="fa fa-angle-right"></i>Other inventories</a></li>
                 </ul>
-              </li>
+              </li> -->
             
             </ul>
           </div>
