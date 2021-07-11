@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Jul 09, 2021 at 11:39 AM
+-- Generation Time: Jul 11, 2021 at 05:13 PM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 8.0.1
 
@@ -20,32 +20,6 @@ SET time_zone = "+00:00";
 --
 -- Database: `asset_management`
 --
-
--- --------------------------------------------------------
-
---
--- Table structure for table `admin`
---
-
-CREATE TABLE `admin` (
-  `a_id` int(11) NOT NULL,
-  `f_name` varchar(50) NOT NULL,
-  `l_name` varchar(50) NOT NULL,
-  `email` varchar(50) NOT NULL,
-  `gender` varchar(20) NOT NULL,
-  `password` varchar(20) NOT NULL,
-  `cpassword` varchar(20) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `admin`
---
-
-INSERT INTO `admin` (`a_id`, `f_name`, `l_name`, `email`, `gender`, `password`, `cpassword`) VALUES
-(1, 'shaji', 'abraham', 'aswath.k@maventic.com', 'on', '1234', '1234'),
-(2, 'shaji', 'abraham', 'aswath.k@maventic.com', 'on', '1234', '1234'),
-(3, 'shaji', 'anviya', 'shaji123@gmail.com', 'on', '143', '143'),
-(4, 'Amal', 'Rk', 'amal@itasset.com', 'on', '12345', '12345');
 
 -- --------------------------------------------------------
 
@@ -195,6 +169,19 @@ INSERT INTO `printer` (`id`, `manufacture`, `model`, `type`, `location`, `descri
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `report`
+--
+
+CREATE TABLE `report` (
+  `id` int(11) NOT NULL,
+  `type` varchar(20) NOT NULL,
+  `itemid` int(11) NOT NULL,
+  `description` varchar(500) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `software`
 --
 
@@ -219,15 +206,36 @@ INSERT INTO `software` (`id`, `name`, `version`, `systemid`, `installdate`, `typ
 (3, 'Microsoft 365', 'Microsoft 365 Family | 12-Month Subscription, up t', 3, '2021-07-17', 'Office Tools', 'Office apps, including Word, Excel, and PowerPoint. 1 TB of OneDrive cloud storage for each person', '99.99'),
 (4, 'Elementry OS', '6', 5, '2021-07-15', 'Operating System', 'The fast, open, and privacy-respecting replacement for Windows and macOS', '6000');
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `user`
+--
+
+CREATE TABLE `user` (
+  `id` int(11) NOT NULL,
+  `name` varchar(100) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `type` varchar(10) NOT NULL,
+  `password` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `user`
+--
+
+INSERT INTO `user` (`id`, `name`, `email`, `type`, `password`) VALUES
+(1, 'shaji', 'aswath.k@maventic.com', '', '1234'),
+(2, 'shaji', 'aswath.k@maventic.com', '', '1234'),
+(3, 'shaji', 'shaji123@gmail.com', '', '143'),
+(4, 'Amal', 'amal@itasset.com', 'admin', '12345'),
+(5, 'test assistant', 'assistant@itasset.com', 'assistant', '09876'),
+(6, 'test assistant', 'assistant@itasset.com', 'assistant', '09876'),
+(7, 'test assistant', 'assistant@itasset.com', 'assistant', '09876');
+
 --
 -- Indexes for dumped tables
 --
-
---
--- Indexes for table `admin`
---
-ALTER TABLE `admin`
-  ADD PRIMARY KEY (`a_id`);
 
 --
 -- Indexes for table `computer`
@@ -260,6 +268,12 @@ ALTER TABLE `printer`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `report`
+--
+ALTER TABLE `report`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `software`
 --
 ALTER TABLE `software`
@@ -267,14 +281,14 @@ ALTER TABLE `software`
   ADD KEY `systemid` (`systemid`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- Indexes for table `user`
 --
+ALTER TABLE `user`
+  ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT for table `admin`
+-- AUTO_INCREMENT for dumped tables
 --
-ALTER TABLE `admin`
-  MODIFY `a_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `computer`
@@ -307,10 +321,22 @@ ALTER TABLE `printer`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
+-- AUTO_INCREMENT for table `report`
+--
+ALTER TABLE `report`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT for table `software`
 --
 ALTER TABLE `software`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- AUTO_INCREMENT for table `user`
+--
+ALTER TABLE `user`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- Constraints for dumped tables
