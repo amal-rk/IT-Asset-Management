@@ -78,6 +78,11 @@ class Admin_model extends CI_Model
 		$query=$this->db->query("select * from software");
 		return $query->result();
 	}
-
+	function getreport()
+	{
+		$query=$this->db->query("select * from report");
+		return $query->result();
+	}
 }
+
 ?>

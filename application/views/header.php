@@ -114,68 +114,80 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
     <!--left-fixed -navigation-->
     <aside class="sidebar-left">
       <nav class="navbar navbar-inverse">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".collapse" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            </button>
-            <h1><a class="navbar-brand" href="<?php echo base_url();?>/AdminController/index"><span class="fa fa-area-chart"></span>IT ASSET<span class="dashboard_text">dashboard</span></a></h1>
-          </div>
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="sidebar-menu">
-              <li class="header">MAIN NAVIGATION</li>
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".collapse" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
+          <h1><a class="navbar-brand" href="<?php echo base_url();?>/AdminController/index"><span class="fa fa-area-chart"></span>IT ASSET<span class="dashboard_text">dashboard</span></a></h1>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="sidebar-menu">
+            <li class="header">MAIN NAVIGATION</li>
+            <li class="treeview">
+              <a href="<?php echo site_url();?>/AdminController/dashboard">
+              <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+              </a>
+            </li>
+            <li class="treeview">
+            <a href="#">
+              <i class="fa fa-laptop"></i>
+                <span>ADD ITEM</span>
+              <i class="fa fa-angle-left pull-right"></i>
+            </a>
+            <ul class="treeview-menu">
+              <li>
+                <a href="<?php echo site_url();?>/AdminController/software"><i class="fa fa-angle-left pull-right"></i>SOFTWARE</a>
+              </li>
               <li class="treeview">
-                <a href="<?php echo site_url();?>/AdminController/dashboard">
-                <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+              <a href="#">
+                <i class=""></i>
+                <span>HARDWARE</span>
+                <i class="fa fa-angle-left pull-right"></i>
+              </a>
+              <ul class="treeview-menu">
+                <li><a href="<?php echo site_url();?>/AdminController/computer"><i class="fa fa-angle-right"></i>COMPUTER</a></li>
+                <li><a href="<?php echo site_url();?>/AdminController/monitor"><i class="fa fa-angle-right"></i>MONITOR</a></li>
+                <li><a href="<?php echo site_url();?>/AdminController/mouse"><i class="fa fa-angle-right"></i>MOUSE</a></li>
+                <li><a href="<?php echo site_url();?>/AdminController/printer"><i class="fa fa-angle-right"></i>PRINTER</a></li>
+                <li><a href="<?php echo site_url();?>/AdminController/keyboard"><i class="fa fa-angle-right"></i>KEYBOARD</a></li>
+              </ul>
+              <li class="treeview">
+                <a href="<?php echo site_url();?>/AdminController/viewitems">
+                <i class="fa fa-dashboard"></i>
+                <span>View Items</span>
                 </a>
               </li>
-        <li class="treeview">
-                <a href="#">
-                <i class="fa fa-laptop"></i>
-                <span>ADD ITEM</span>
-                <i class="fa fa-angle-left pull-right"></i>
-                </a>
-                <ul class="treeview-menu">
-                  <li><a href="<?php echo site_url();?>/AdminController/software"><i class="fa fa-angle-left pull-right"></i>SOFTWARE</a></li>
-                  <li class="treeview">
-        <a href="#">
-          <i class=""></i>
-          <span>HARDWARE</span>
-          <i class="fa fa-angle-left pull-right"></i>
-        </a>
-        <ul class="treeview-menu">
-          <li><a href="<?php echo site_url();?>/AdminController/computer"><i class="fa fa-angle-right"></i>COMPUTER</a></li>
-          <li><a href="<?php echo site_url();?>/AdminController/monitor"><i class="fa fa-angle-right"></i>MONITOR</a></li>
-          <li><a href="<?php echo site_url();?>/AdminController/mouse"><i class="fa fa-angle-right"></i>MOUSE</a></li>
-          <li><a href="<?php echo site_url();?>/AdminController/printer"><i class="fa fa-angle-right"></i>PRINTER</a></li>
-          <li><a href="<?php echo site_url();?>/AdminController/keyboard"><i class="fa fa-angle-right"></i>KEYBOARD</a></li>
-        </ul>
-        <li class="treeview">
-          <a href="<?php echo site_url();?>/AdminController/viewitems">
-          <i class="fa fa-dashboard"></i> <span>View Items</span>
-          </a>
-      </li>
-          <li class="treeview">
-            <a href="#">
-            <i class="fa fa-angle-left pull-right"></i>
               <li class="treeview">
-                <a href="<?php echo site_url();?>/AdminController/userinformation">
-                <i class="fa fa-laptop"></i>
-                <span>User information</span>
-              <!-- <li class="treeview">
+                <a href="<?php echo site_url();?>/AssistantController/register_page">
+                <i class="fa fa-dashboard"></i> <span>Assistant Registration</span>
+                </a>
+              </li>
+              <li class="treeview">
                 <a href="#">
-                <i class="fa fa-envelope"></i> <span>Update</span>
-                <i class="fa fa-angle-left pull-right"></i><small class="label pull-right label-info1">08</small><span class="label label-primary1 pull-right">02</span></a>
-                <ul class="treeview-menu">
-                  <li><a href="inbox.html"><i class="fa fa-angle-right"></i>Hardware</a></li>
-                  <li><a href="compose.html"><i class="fa fa-angle-right"></i>Other inventories</a></li>
-                </ul>
-              </li> -->
-            
+                  <i class="fa fa-angle-left pull-right"></i>
+                  <li class="treeview">
+                    <a href="<?php echo site_url();?>/AdminController/userinformation">
+                      <i class="fa fa-laptop"></i>
+                      <span>User information</span>
+                        <!-- <li class="treeview">
+                          <a href="#">
+                          <i class="fa fa-envelope"></i> <span>Update</span>
+                          <i class="fa fa-angle-left pull-right"></i><small class="label pull-right label-info1">08</small><span class="label label-primary1 pull-right">02</span></a>
+                          <ul class="treeview-menu">
+                            <li><a href="inbox.html"><i class="fa fa-angle-right"></i>Hardware</a></li>
+                            <li><a href="compose.html"><i class="fa fa-angle-right"></i>Other inventories</a></li>
+                          </ul>
+                        </li> -->
+                    </a>
+                  </li>
+                </a>
+              </li>
             </ul>
-          </div>
+          </ul>
+        </div>
           <!-- /.navbar-collapse -->
       </nav>
     </aside>
@@ -363,7 +375,18 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
                 <div class="profile_img"> 
                   <span class="prfil-img"><img src="<?php echo base_url();?>/assets/images/2.jpg" alt=""> </span> 
                   <div class="user-name">
-                    <p>Admin Name</p>
+                    <p><!-- ?php
+                    if($name)
+                    {
+                      echo $name;
+                    }
+                    else
+                    {
+                      echo "Admin Name";
+                    }
+                    ?> -->
+                    Admin Name
+                    </p>
                     <span>Administrator</span>
                   </div>
                   <i class="fa fa-angle-down lnr"></i>

@@ -1,9 +1,7 @@
 <?php include 'header.php'; ?>
-		<!-- main content start-->
-		<div id="page-wrapper">
+	<!-- main content start-->
+	<div id="page-wrapper">
       <div class="row">
-      	<form class="form-horizontal" action="<?php echo site_url();?>/AdminController/add_software/" method="post">
-		</form>
 		<div class="container">
 			<h2>Computers</h2><br>
 			<table class="table table-striped table-hover table-bordered">

@@ -17,18 +17,16 @@ class AdminController extends CI_Controller
 	}
     public function signup()
     {
-        $this->load->view('signup');
+        $this->load->view('adminregister');
     }
     public function register()
     {
         if($this->input->post('save'))
 		{
-		    $data['f_name']=$this->input->post('firstname');
-			$data['l_name']=$this->input->post('LastName');
-			$data['email']=$this->input->post('Email');
-            $data['gender']=$this->input->post('Gender');
-            $data['password']=$this->input->post('Password');
-            $data['cpassword']=$this->input->post('CPassword');
+		    $data['name']=$this->input->post('name');
+			$data['email']=$this->input->post('email');
+            $data['password']=$this->input->post('password');
+            $data['type'] = "admin";
 			$response=$this->Admin_model->saverecords($data);
 			if($response==true){
 			        echo "Records Saved Successfully";
@@ -42,7 +40,7 @@ class AdminController extends CI_Controller
     }
     public function login()
     {
-        $this->load->view('home');
+        $this->load->view('adminlogin');
 
     }
     public function signin()
@@ -57,17 +55,43 @@ class AdminController extends CI_Controller
 
     		if ($b->num_rows()==1) 
     		{
-    			$this->session->set_userdata("id",$b->row()->a_id);
-    			$this->session->set_userdata("name",$b->row()->f_name);
-    			$this->load->view('adminhome');
+    			$this->session->set_userdata("id",$b->row()->id);
+    			$this->session->set_userdata("name",$b->row()->name);
     			
+                if($b->row()->type=="admin")
+                {   
+                    //$data['name'] = $b->row()->name;
+                    //$this->load->view('adminhome',$data);
+                    $this->load->view('adminhome');
+                }
+                elseif($b->row()->type=="assistant")
+                {
+                    $this->load->view('assistanthome');
+                }
+                elseif($b->row()->type=="head"){
+                    $this->load->view('headview');
+                }
+                else
+                {
+                    ?>
+                    <script>
+                        alert("user type did not match");
+                    </script>
+                    <?php
+                }
+                /////////////////////////////////////////////////////////////////////
+                //make a new if condition here for checking usertype               //
+                //after checking the usertype give apropriate response             //
+                //add a new usertype field to admin and use its table for all users//
+                /////////////////////////////////////////////////////////////////////
     		}
             else
             {
                 ?>
                 <script>
                     alert("invalid user name or password");
-           <?php
+                </script>
+                <?php
             }
         }
     }
@@ -281,6 +305,10 @@ class AdminController extends CI_Controller
         $result['software'] = $this->Admin_model->getsoftware();
         $this->load->view('viewitems',$result);
     }
-}
 
+    public function viewreport()
+    {
+        $result['report'] = $this->Admin_model->getreport();
+    }
+}
 ?>
