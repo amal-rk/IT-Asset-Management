@@ -40,8 +40,7 @@ class AssistantController extends CI_Controller{
 
     }
 
-
-    //login page foe assistant
+    //login page for assistant
     public function login_page()
     {
         $this->load->view('assistantlogin');
@@ -59,8 +58,8 @@ class AssistantController extends CI_Controller{
             {
                 $this->session->set_userdata("id",$b->row()->id);
                 $this->session->set_userdata("name",$b->row()->name);
-                $this->load->view('viewitems');
-                
+                //$this->load->view('viewitems');
+                $this->viewitems();
             }
             else
             {
@@ -76,7 +75,7 @@ class AssistantController extends CI_Controller{
 
     public function add_report()
     {
-        $this->load->view('addreport');
+        $this->load->view('testreport');
     }
 
     //function sending reports to admin
@@ -92,7 +91,7 @@ class AssistantController extends CI_Controller{
         if($response==true)
         {
             echo "Report Saved Successfully";
-            $this->load->view('addreport');
+            $this->viewitems();
         }
         else
         {
@@ -107,7 +106,7 @@ class AssistantController extends CI_Controller{
         $result['printer'] = $this->Assistant_model->getprinter();
         $result['monitor'] = $this->Assistant_model->getmonitor();
         $result['software'] = $this->Assistant_model->getsoftware();
-        $this->load->view('viewitems',$result);
+        $this->load->view('assistantviewitems',$result);
     }
 
 }

@@ -29,7 +29,8 @@
 						</div>
             			<div class="form-group">
 							<label for="location" class="col-sm-2 control-label">Location</label>
-							<div class="col-sm-8"><select  id="selector1" class="form-control1" name="location">
+							<div class="col-sm-8">
+								<select  id="selector1" class="form-control1" name="location">
 									<option>LAB 1</option>
 									<option>LAB 2</option>
 								</select>

@@ -1,4 +1,4 @@
-<?php include "header.php" ?>
+<?php include "header-without-navbar.php" ?>
 		<!-- main content start-->
 		<div id="page-wrapper">
 			<div class="main-page login-page ">

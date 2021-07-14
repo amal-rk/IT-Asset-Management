@@ -19,7 +19,8 @@
 						</div>
 						<div class="form-group">
 							<label for="type" class="col-sm-2 control-label">Type</label>
-							<div class="col-sm-8"><select  id="selector1" class="form-control1" name="type">
+							<div class="col-sm-8">
+								<select  id="selector1" class="form-control1" name="type">
 									<option>LCD</option>
 									<option>LED</option>
 									<option>NORMAL</option>

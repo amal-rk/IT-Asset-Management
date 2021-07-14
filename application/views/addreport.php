@@ -25,10 +25,6 @@
 						</form>
 					</div>
 				</div>
-				
 			</div>
 		</div>
-		<!--footer-->
-		<div class="footer">
-		   	</div>
 <?php include "footer.php" ?>
